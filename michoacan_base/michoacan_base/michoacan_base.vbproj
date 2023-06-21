@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8CAE0E8A-C15A-4C95-9521-8263CBD4466B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>michoacan_base.My.MyApplication</StartupObject>
+    <RootNamespace>michoacan_base</RootNamespace>
+    <AssemblyName>michoacan_base</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>michoacan_base.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>michoacan_base.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="f27_agrpro.Designer.vb">
+      <DependentUpon>f27_agrpro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f27_agrpro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f10_Crearpro.Designer.vb">
+      <DependentUpon>f10_Crearpro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f10_Crearpro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f11_Modtic.Designer.vb">
+      <DependentUpon>f11_Modtic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f11_Modtic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f13_actsto.Designer.vb">
+      <DependentUpon>f13_actsto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f13_actsto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f14_veradmin.Designer.vb">
+      <DependentUpon>f14_veradmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f14_veradmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f15_Empleados.Designer.vb">
+      <DependentUpon>f15_Empleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f15_Empleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f16_creemp.Designer.vb">
+      <DependentUpon>f16_creemp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f16_creemp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f17_modemp.Designer.vb">
+      <DependentUpon>f17_modemp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f17_modemp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f18_clientes.Designer.vb">
+      <DependentUpon>f18_clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f18_clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f19_añacli.Designer.vb">
+      <DependentUpon>f19_añacli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f19_añacli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f20_actcli.Designer.vb">
+      <DependentUpon>f20_actcli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f20_actcli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f21_tickets.Designer.vb">
+      <DependentUpon>f21_tickets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f21_tickets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f22_dticket.Designer.vb">
+      <DependentUpon>f22_dticket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f22_dticket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f23_facturas.Designer.vb">
+      <DependentUpon>f23_facturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f23_facturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f24_crearfactura.Designer.vb">
+      <DependentUpon>f24_crearfactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f24_crearfactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f25_dtick.Designer.vb">
+      <DependentUpon>f25_dtick.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f25_dtick.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f26tick.Designer.vb">
+      <DependentUpon>f26tick.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f26tick.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f28_impfac.Designer.vb">
+      <DependentUpon>f28_impfac.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f28_impfac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f29_dfac.Designer.vb">
+      <DependentUpon>f29_dfac.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f29_dfac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f5_crearticket.Designer.vb">
+      <DependentUpon>f5_crearticket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f5_crearticket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f1_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f1_Login.Designer.vb">
+      <DependentUpon>f1_Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f2_menu.Designer.vb">
+      <DependentUpon>f2_menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f2_menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f3_venta.Designer.vb">
+      <DependentUpon>f3_venta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f3_venta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f4_calcu.Designer.vb">
+      <DependentUpon>f4_calcu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f4_calcu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f6_editar.Designer.vb">
+      <DependentUpon>f6_editar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f6_editar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f7_agpro.Designer.vb">
+      <DependentUpon>f7_agpro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f7_agpro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f8_imptick.Designer.vb">
+      <DependentUpon>f8_imptick.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f8_imptick.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f9_inventario.Designer.vb">
+      <DependentUpon>f9_inventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f9_inventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f12_mpre.Designer.vb">
+      <DependentUpon>f12_mpre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="f12_mpre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MichoacanaDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MichoacanaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MichoacanaDataSet.vb">
+      <DependentUpon>MichoacanaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="f10_Crearpro.resx">
+      <DependentUpon>f10_Crearpro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f11_Modtic.resx">
+      <DependentUpon>f11_Modtic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f12_mpre.resx">
+      <DependentUpon>f12_mpre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f13_actsto.resx">
+      <DependentUpon>f13_actsto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f14_veradmin.resx">
+      <DependentUpon>f14_veradmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f15_Empleados.resx">
+      <DependentUpon>f15_Empleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f16_creemp.resx">
+      <DependentUpon>f16_creemp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f17_modemp.resx">
+      <DependentUpon>f17_modemp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f18_clientes.resx">
+      <DependentUpon>f18_clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f19_añacli.resx">
+      <DependentUpon>f19_añacli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f1_Login.resx">
+      <DependentUpon>f1_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f20_actcli.resx">
+      <DependentUpon>f20_actcli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f21_tickets.resx">
+      <DependentUpon>f21_tickets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f22_dticket.resx">
+      <DependentUpon>f22_dticket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f23_facturas.resx">
+      <DependentUpon>f23_facturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f24_crearfactura.resx">
+      <DependentUpon>f24_crearfactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f25_dtick.resx">
+      <DependentUpon>f25_dtick.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f26tick.resx">
+      <DependentUpon>f26tick.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f27_agrpro.resx">
+      <DependentUpon>f27_agrpro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f28_impfac.resx">
+      <DependentUpon>f28_impfac.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f29_dfac.resx">
+      <DependentUpon>f29_dfac.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f2_menu.resx">
+      <DependentUpon>f2_menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f3_venta.resx">
+      <DependentUpon>f3_venta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f4_calcu.resx">
+      <DependentUpon>f4_calcu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f5_crearticket.resx">
+      <DependentUpon>f5_crearticket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f6_editar.resx">
+      <DependentUpon>f6_editar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f7_agpro.resx">
+      <DependentUpon>f7_agpro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f8_imptick.resx">
+      <DependentUpon>f8_imptick.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f9_inventario.resx">
+      <DependentUpon>f9_inventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MichoacanaDataSet.xsc">
+      <DependentUpon>MichoacanaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MichoacanaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MichoacanaDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MichoacanaDataSet.xss">
+      <DependentUpon>MichoacanaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\michoacana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
